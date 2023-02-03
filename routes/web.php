@@ -16,3 +16,7 @@ use App\Http\Controllers\MainController;
 */
 
 Route::get('/', [MainController::class, 'home']);
+Route::get('/saints/{id}', [MainController::class, 'show']);
+Route::get('/saints/destroy{id}', [MainController::class, 'destroy'])->name('saints.destroy');
+Route::post('/saints/create', [MainController::class, 'create'])->name('saints.create');
+Route::get('/saints/store', [MainController::class, 'store'])->name('saints.store');

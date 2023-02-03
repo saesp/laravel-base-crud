@@ -10,7 +10,6 @@ class MainController extends Controller
 {
     public function home()
     {
-
         $saints = Saints::all();
 
         $data = [
@@ -20,14 +19,16 @@ class MainController extends Controller
         return view('pages.home', $data);
     }
 
-// public function show($id) {
 
-//     $player = Player::find($id);
+    // show a specific id
+    public function show($id)
+    {
+        $saints = Saints::find($id);
 
-//     $data = [
-//         'player' => $player
-//     ];
+        $data = [
+            'saints' => $saints
+        ];
 
-//     return view('pages.player', $data);
-// }
+        return view('pages.saints_show', $data);
+    }
 }

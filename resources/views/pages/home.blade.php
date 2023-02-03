@@ -5,10 +5,13 @@
     
     <ul>
         @foreach ($saints as $saint)
-        <li>
-            {{$saint->id}} - {{$saint->name}}
-        </li>
-        
+
+        <a href="/saints/{{$saint ->id}}">
+            <li>
+                {{$saint->id}} - {{$saint->name}}
+            </li>
+        </a>
+
         @endforeach
     </ul>
 @endsection 
