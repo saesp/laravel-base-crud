@@ -17,8 +17,8 @@ class SaintsFactory extends Factory
     public function definition()
     {
         return [
-            'first_name' => fake()->firstName(),
-            'last_name' => fake()->lastName(),
+            'name' => fake()->name(),
+            'birth_place' => fake()->city(),
             'blessing_date' => fake()->date(),
             'miracles_count' => fake()->numberBetween(1, 500),
         ];

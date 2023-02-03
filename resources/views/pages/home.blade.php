@@ -6,7 +6,7 @@
     <ul>
         @foreach ($saints as $saint)
         <li>
-            {{$saint->id}} - {{$saint->first_name}}
+            {{$saint->id}} - {{$saint->name}}
         </li>
         
         @endforeach
