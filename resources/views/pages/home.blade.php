@@ -2,11 +2,12 @@
 
 @section('content')
     <h1>Religion</h1>
-        <ul>
-            @foreach ($saints as $saint)
-            <li>
-                {{$saint->id}} - {{$saint->first_name}}
-            </li>
-            @endforeach
-        </ul>
+    
+    <ul>hh
+        @foreach ($saints as $saint)
+        <li>fs
+            {{$saint['id']}} - {{$saint['first_name']}}
+        </li>
+        @endforeach
+    </ul>
 @endsection 

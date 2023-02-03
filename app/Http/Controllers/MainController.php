@@ -8,7 +8,7 @@ use App\Models\Saints;
 
 class MainController extends Controller
 {
-    public function index()
+    public function home()
     {
 
         $saints = Saints::all();
