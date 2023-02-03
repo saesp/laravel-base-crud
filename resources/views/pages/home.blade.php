@@ -1,13 +1,14 @@
 @extends('layouts.main-layout')
 
 @section('content')
-    <h1>Religion</h1>
+    <h2>Saints</h2>
     
-    <ul>hh
+    <ul>
         @foreach ($saints as $saint)
-        <li>fs
-            {{$saint['id']}} - {{$saint['first_name']}}
+        <li>
+            {{$saint->id}} - {{$saint->first_name}}
         </li>
+        
         @endforeach
     </ul>
 @endsection 
