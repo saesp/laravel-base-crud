@@ -2,11 +2,11 @@
 
 @section('content')
     <h2>Saints</h2>
-    
-    <a href="/saints/create">
-        <div>ADD SAINT</div>
-    </a>
-    
+
+    <div>
+        <a href="{{ route('saints.create') }}">ADD SAINT</a>
+    </div>
+
     <ul>
         @foreach ($saints as $saint)
             <li>

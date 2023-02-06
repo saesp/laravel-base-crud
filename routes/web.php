@@ -21,5 +21,5 @@ Route::get('/saints/{id}', [MainController::class, 'show']);
 
 Route::get('/saints/delete/{id}', [MainController::class, 'delete'])->name('saints.destroy');
 
-Route::post('/saints/create', [MainController::class, 'create'])->name('saints.create');
+Route::get('/saints/create', [MainController::class, 'create'])->name('saints.create');
 Route::post('/saints/store', [MainController::class, 'store'])->name('saints.store');

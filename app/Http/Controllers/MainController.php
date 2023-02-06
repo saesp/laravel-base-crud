@@ -44,4 +44,21 @@ class MainController extends Controller
     {
         return view('pages.saints_create');
     }
+
+
+    public function store(Request $request)
+    {
+        $data = $request;
+
+        $saints = new Saints();
+
+        $saints->name = $data['name'];
+        $saints->birth_place = $data['birth_place'];
+        $saints->blassing_date = $data['blassing_date'];
+        $saints->miracles_count = $data['miracles_count'];
+
+        $saints->save();
+
+        return redirect()->route('home');
+    }
 }
