@@ -31,4 +31,17 @@ class MainController extends Controller
 
         return view('pages.saints_show', $data);
     }
+
+
+    public function delete(Saints $id)
+    {
+        $id->delete();
+        return redirect()->route('home');
+    }
+
+
+    public function create()
+    {
+        return view('pages.saints_create');
+    }
 }
